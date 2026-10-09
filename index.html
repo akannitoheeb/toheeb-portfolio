@@ -158,12 +158,16 @@ main,footer{position:relative;z-index:2}
 #intro.gone{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .8s,visibility 0s .8s}
 #intro.gone *{pointer-events:none!important}
 .st1,.st2{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}
-.st1{animation:st1out .7s 2.3s forwards}
-.st1 small{color:var(--acc);letter-spacing:.4em;font-size:.72rem;text-transform:uppercase;animation:rise 1s .2s both}
-.st1 h2{font-size:clamp(3.5rem,13vw,10rem);letter-spacing:.06em;margin-top:8px;background:linear-gradient(100deg,#fff 30%,var(--acc) 50%,#fff 70%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sweep 2.4s .3s ease both,rise 1.2s .3s both}
-.st1 span{letter-spacing:.5em;font-size:.7rem;color:#8d8d96;margin-top:14px;animation:rise 1s 1s both}
-.st2{opacity:0;pointer-events:none;animation:st2in .9s 2.7s forwards}
+.st1{animation:st1out .9s 4.2s forwards}
+.st1 small{color:var(--acc);letter-spacing:.4em;font-size:.72rem;text-transform:uppercase;animation:rise 1.6s .4s both}
+.st1 h2{font-size:clamp(3.5rem,13vw,10rem);letter-spacing:.06em;margin-top:8px;background:linear-gradient(100deg,#fff 30%,var(--acc) 50%,#fff 70%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sweep 3.6s .6s ease both,rise 2s .6s both}
+.st1 span{letter-spacing:.5em;font-size:.7rem;color:#8d8d96;margin-top:14px;animation:rise 1.6s 2s both}
+.st2{opacity:0;pointer-events:none;animation:st2in 1.4s 4.8s forwards}
 .st2 h2{font-size:clamp(2.6rem,7vw,5.5rem);color:#fff}
+.st2 h2{animation:rise 1.4s 5s backwards}
+.prof:nth-child(1){animation:rise 1s 5.5s backwards}
+.prof:nth-child(2){animation:rise 1s 5.8s backwards}
+.prof:nth-child(3){animation:rise 1s 6.1s backwards}
 .profiles{display:flex;gap:clamp(12px,3vw,28px);margin-top:34px;flex-wrap:wrap;justify-content:center}
 .prof{width:clamp(110px,20vw,170px);color:#9a9aa3;font-size:.85rem;transition:transform .3s,color .3s}
 .prof i{display:flex;align-items:center;justify-content:center;aspect-ratio:1;border-radius:8px;margin-bottom:10px;font:normal 4rem 'Bebas Neue';color:#050506;transition:transform .3s,box-shadow .3s}
