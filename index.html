@@ -155,7 +155,8 @@ main,footer{position:relative;z-index:2}
 
 /* ---------- INTRO ---------- */
 #intro{position:fixed;inset:0;z-index:300;background:#050506;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;transition:opacity .8s}
-#intro.gone{opacity:0;pointer-events:none}
+#intro.gone{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .8s,visibility 0s .8s}
+#intro.gone *{pointer-events:none!important}
 .st1,.st2{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}
 .st1{animation:st1out .7s 2.3s forwards}
 .st1 small{color:var(--acc);letter-spacing:.4em;font-size:.72rem;text-transform:uppercase;animation:rise 1s .2s both}
@@ -388,7 +389,7 @@ form.contact{max-width:720px;margin:0 auto;text-align:left;border:1px solid var(
 .wa:hover{transform:scale(1.1)}.wa svg{width:28px;height:28px;fill:#fff}
 .pop{position:fixed;inset:0;z-index:250;background:rgba(0,0,0,.88);display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
 .pop.show{opacity:1;visibility:visible}
-.pbox{background:var(--surface);border:1px solid var(--acc);border-radius:10px;max-width:480px;width:100%;position:relative;max-height:92vh;overflow:auto;box-shadow:0 0 80px var(--glow)}
+.pbox{background:var(--surface);border:1px solid var(--acc);border-radius:10px;max-width:480px;width:100%;position:relative;max-height:calc(100vh - 2rem);max-height:calc(100dvh - 2rem);overflow:auto;-webkit-overflow-scrolling:touch;box-shadow:0 0 80px var(--glow)}
 .pbox::before{content:"";display:block;height:4px;background:var(--acc)}
 .pbody{padding:2rem}
 .pbody .tg{color:var(--acc);font-size:.66rem;letter-spacing:.25em;text-transform:uppercase}
