@@ -6,8 +6,8 @@
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||'noir'}catch(e){}</script>
 
   <!-- ── PRIMARY SEO ── -->
-  <title>Portfolio & Client Reviews — Toheeb Akanni | Email Marketing Strategist</title>
-  <meta name="description" content="Explore Toheeb Akanni's email marketing portfolio featuring spec campaigns for fintech, e-commerce, banking, and FMCG brands. View client reviews and campaign results."/>
+  <title>Email Marketing Portfolio — Toheeb Akanni | Spec Campaigns</title>
+  <meta name="description" content="Explore Toheeb Akanni's email marketing portfolio featuring spec campaigns for fintech, e-commerce, banking, and FMCG brands. View full campaign breakdowns and email sequences."/>
   <meta name="keywords" content="Toheeb Akanni, email marketing portfolio, email campaigns Nigeria, email marketing strategist, Cowrywise, GTBank, Jumia, Paystack, Flutterwave"/>
   <meta name="author" content="Toheeb Akanni"/>
   <meta name="robots" content="index, follow"/>
@@ -21,15 +21,15 @@
   <!-- ── OPEN GRAPH ── -->
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://toheebakanni.name.ng/portfolio-reviews"/>
-  <meta property="og:title" content="Portfolio & Reviews — Toheeb Akanni"/>
-  <meta property="og:description" content="Email marketing campaigns that open wallets, not just inboxes. View portfolio and client reviews."/>
+  <meta property="og:title" content="Email Marketing Portfolio — Toheeb Akanni"/>
+  <meta property="og:description" content="Email marketing campaigns that open wallets, not just inboxes. Explore the full campaign portfolio."/>
   <meta property="og:image" content="https://toheebakanni.name.ng/profile.jpg"/>
   <meta property="og:locale" content="en_NG"/>
   <meta property="og:site_name" content="Toheeb Akanni"/>
 
   <!-- ── TWITTER/X CARD ── -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Portfolio & Reviews — Toheeb Akanni"/>
+  <meta name="twitter:title" content="Email Marketing Portfolio — Toheeb Akanni"/>
   <meta name="twitter:description" content="Email marketing campaigns that open wallets, not just inboxes."/>
   <meta name="twitter:image" content="https://toheebakanni.name.ng/profile.jpg"/>
 
@@ -153,30 +153,6 @@ section{padding:5rem 6%;position:relative}
 .card-footer{padding:.9rem 1.6rem 1.4rem}
 .view-campaign{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#fff;font-weight:500}
 
-/* ---------- TESTIMONIALS (bright band) ---------- */
-.dark-section{background:var(--inv-bg);color:var(--inv-ink)}
-.dark-section .section-title{color:var(--inv-ink)}
-.dark-section .section-title em{-webkit-text-stroke-color:var(--inv-ink)}
-.dark-section .section-label{color:var(--inv-mute)}
-.dark-section .section-label::before{background:var(--inv-ink)}
-.dark-section .section-intro{color:var(--inv-mute)}
-.testimonials-wrapper{overflow:hidden;margin:0 -6vw;padding:0 6vw}
-.testimonials-track{display:flex;gap:1.2rem;width:max-content;animation:scrollT 40s linear infinite}
-.testimonials-wrapper:hover .testimonials-track{animation-play-state:paused}
-@keyframes scrollT{to{transform:translateX(-50%)}}
-.testimonial-card{flex-shrink:0;width:370px;background:var(--inv-ink);color:#fff;padding:2rem;border-radius:10px;position:relative;overflow:hidden}
-.testimonial-card::before{content:"\201C";font:400 9rem/1 'Bebas Neue',sans-serif;color:rgba(255,255,255,.1);position:absolute;top:-.4rem;right:1rem}
-.testimonial-card .quote{font:italic 400 1.15rem/1.6 'Cormorant Garamond',Georgia,serif;color:#fff;margin-bottom:1.4rem;position:relative}
-.testimonial-author{display:flex;align-items:center;gap:1rem;position:relative}
-.author-avatar{width:44px;height:44px;border-radius:50%;background:#fff;color:#0a0a0b;display:flex;align-items:center;justify-content:center;font:400 1.2rem 'Bebas Neue',sans-serif;flex-shrink:0}
-.author-info h5{color:#fff;font-weight:500;font-size:.9rem}
-.author-info p{color:#a8a8b0;font-size:.8rem}
-@media(max-width:768px){
-  .testimonials-wrapper{overflow:visible;margin:0;padding:0}
-  .testimonials-track{animation:none;display:grid;grid-template-columns:1fr;width:100%}
-  .testimonial-card{width:100%}
-}
-
 /* ---------- TOOLS ---------- */
 .tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
 .tool-card{background:var(--surface);padding:1.5rem 1rem;border:1px solid var(--line);border-radius:10px;text-align:center;transition:transform .3s,border-color .3s,box-shadow .3s,opacity .9s ease,filter .9s ease}
@@ -269,6 +245,15 @@ footer p{font-size:.78rem;color:var(--muted)}
 .hero-eyebrow{--d:0}.hero h1{--d:1}.hero-sub{--d:2}.hero-cta{--d:3}
 .cta-section h2{--d:1}.cta-section p{--d:2}.cta-buttons{--d:3}
 
+#tools{background:var(--inv-bg);color:var(--inv-ink)}
+#tools .section-title{color:var(--inv-ink)}
+#tools .section-title em{-webkit-text-stroke-color:var(--inv-ink)}
+#tools .section-label{color:var(--inv-mute)}
+#tools .section-label::before{background:var(--inv-ink)}
+#tools .section-intro{color:var(--inv-mute)}
+#tools .tool-card{background:var(--inv-ink);border-color:transparent}
+#tools .tool-card:hover{box-shadow:0 14px 40px rgba(0,0,0,.25);border-color:var(--acc)}
+
   </style>
   <noscript><style>[data-r]{opacity:1!important;filter:none!important;transform:none!important}</style></noscript>
   <!-- Google Analytics -->
@@ -298,7 +283,6 @@ footer p{font-size:.78rem;color:var(--muted)}
   <ul class="nav-links">
     <li><a href="https://toheebakanni.name.ng">Home</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#testimonials">Reviews</a></li>
     <li><a href="#tools">Tools</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="blog.html">Blog</a></li>
@@ -314,7 +298,6 @@ footer p{font-size:.78rem;color:var(--muted)}
   <ul>
     <li><a href="https://toheebakanni.name.ng" onclick="closeMenu()">Home</a></li>
     <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
-    <li><a href="#testimonials" onclick="closeMenu()">Reviews</a></li>
     <li><a href="#tools" onclick="closeMenu()">Tools</a></li>
     <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
     <li><a href="blog.html" onclick="closeMenu()">Blog</a></li>
@@ -512,77 +495,6 @@ footer p{font-size:.78rem;color:var(--muted)}
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="dark-section" id="testimonials">
-  <p data-r class="section-label">Client Reviews</p>
-  <h2 data-r class="section-title">What Clients <em>Say</em></h2>
-  <p data-r class="section-intro">Real results from real partnerships. Here's what clients say about working together.</p>
-  <div data-r class="testimonials-wrapper">
-    <div class="testimonials-track">
-      <div class="testimonial-card">
-        <p class="quote">Toheeb completely transformed our welcome series. Open rates jumped from 22% to 74%, and we saw a 40% increase in first-time deposits within the first month.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">MO</div>
-          <div class="author-info">
-            <h5>Michael Okafor</h5>
-            <p>Growth Lead, Fintech Startup</p>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card">
-        <p class="quote">The Black Friday campaign Toheeb designed generated 4x more revenue than the previous year. The segmentation strategy was genius — every email felt personal.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">SA</div>
-          <div class="author-info">
-            <h5>Sarah Adeyemi</h5>
-            <p>Marketing Director, E-Commerce Brand</p>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card">
-        <p class="quote">We had 3,000 dormant subscribers. Toheeb's re-engagement campaign brought back 18% of them. That's real money back in our pipeline.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">JE</div>
-          <div class="author-info">
-            <h5>James Eze</h5>
-            <p>CEO, B2B Services Company</p>
-          </div>
-        </div>
-      </div>
-      <!-- Duplicate cards for seamless loop -->
-      <div class="testimonial-card">
-        <p class="quote">Toheeb completely transformed our welcome series. Open rates jumped from 22% to 74%, and we saw a 40% increase in first-time deposits within the first month.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">MO</div>
-          <div class="author-info">
-            <h5>Michael Okafor</h5>
-            <p>Growth Lead, Fintech Startup</p>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card">
-        <p class="quote">The Black Friday campaign Toheeb designed generated 4x more revenue than the previous year. The segmentation strategy was genius — every email felt personal.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">SA</div>
-          <div class="author-info">
-            <h5>Sarah Adeyemi</h5>
-            <p>Marketing Director, E-Commerce Brand</p>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card">
-        <p class="quote">We had 3,000 dormant subscribers. Toheeb's re-engagement campaign brought back 18% of them. That's real money back in our pipeline.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">JE</div>
-          <div class="author-info">
-            <h5>James Eze</h5>
-            <p>CEO, B2B Services Company</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- TOOLS -->
 <section id="tools">
   <p data-r class="section-label">Toolkit</p>
