@@ -787,7 +787,7 @@ function showPop(){let c=false;try{c=sessionStorage.getItem('popupClosed')}catch
 function closePop(){pop.classList.remove('show');try{sessionStorage.setItem('popupClosed','1')}catch(e){}}
 function popDone(){setTimeout(()=>{$('#pform').style.display='none';$('#psucc').style.display='block';setTimeout(closePop,3000)},500)}
 document.addEventListener('mouseleave',e=>{if(e.clientY<=0)showPop()});
-setTimeout(showPop,25000);
+setTimeout(showPop,70000);
 pop.addEventListener('click',e=>{if(e.target===pop)closePop()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closePop()});
 </script>
